@@ -1,0 +1,40 @@
+#  The contact options.
+
+- type: github
+  icon: "fa-brands fa-github"
+
+# - type: orcid
+#   icon: "fa-brands fa-orcid"
+#   url: 'https://orcid.org/0009-0003-6462-6600'
+- type: email
+  icon: "fa-solid fa-envelope"
+  url: "mailto:payariqmarkaziyshifoxonasi.com"
+  # noblank: true # agar linkni hozirgi oynada ochmoqchi bo'lsangiz
+
+- type: rss
+  icon: "fa-solid fa-rss"
+  noblank: true
+
+# Uncomment and complete the url below to enable more contact options
+#
+# - type: mastodon
+#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
+#   url:  ''                  # Fill with your mastodon account page, rel="me" will be applied for verification
+#
+# - type: stack-overflow
+#   icon: 'fab fa-stack-overflow'
+#   url:  ''                  # Fill with your stackoverflow homepage
+#
+# - type: bluesky
+#   icon: 'fa-brands fa-bluesky'
+#   url: ''                   # Fill with your Bluesky profile link
+#
+# - type: reddit
+#   icon: 'fa-brands fa-reddit'
+#   url: ''                   # Fill with your Reddit profile link
+#
+
+- type: telegram
+  icon: "fab fa-telegram"
+  url: "https://t.me/Jakhongir_Kakharov"
+  # noblank: true # open link in current tab

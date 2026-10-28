@@ -1,0 +1,88 @@
+media:
+  input: assets/img
+  output: /assets/img
+
+content:
+  - name: posts
+    label: Blog Postlar
+    type: collection
+    path: _posts/uz-UZ
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Sarlavha
+        type: string
+        required: true
+
+      - name: description
+        label: Post ta'rifi
+        type: text
+
+      - name: date
+        label: Sana
+        type: date
+        required: true
+
+      - name: last_modified_at
+        label: So‘nggi tahrir
+        type: date
+
+      - name: tags
+        label: Teglar
+        type: string
+        list: true
+
+      - name: categories
+        label: Kategoriyalar
+        type: string
+        list: true
+
+      - name: image
+        label: Muqova rasmi
+        type: image
+
+      - name: author
+        label: Muallif
+        type: string
+        required: true
+
+      - name: lang
+        label: Til
+        type: string
+        default: uz-UZ
+        required: true
+
+      - name: body
+        label: Kontent
+        type: rich-text
+
+    view:
+      fields: [title, date, author]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+
+  - name: authors
+    label: Mualliflar
+    type: file
+    path: _data/authors.yml
+    format: yaml
+    fields:
+      - name: name
+        label: To‘liq ism
+        type: string
+        required: true
+
+      - name: bio
+        label: Bio
+        type: text
+
+      - name: avatar
+        label: Avatar
+        type: image
+
+settings:
+  content:
+    merge: true

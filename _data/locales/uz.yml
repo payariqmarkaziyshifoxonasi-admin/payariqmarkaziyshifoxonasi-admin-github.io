@@ -1,0 +1,73 @@
+layout:
+  post: Post
+  category: Kategoriya
+  tag: Teg
+
+tabs:
+  home: Bosh sahifa
+  categories: Kategoriyalar
+  tags: Teglar
+  archives: Arxiv
+  about: Men haqimda
+
+search:
+  hint: Qidirish
+  cancel: Bekor qilish
+  no_results: Afsus! Hech narsa topilmadi.
+
+panel:
+  lastmod: Yaqinda yangilangan
+  trending_tags: Mashhur teglar
+  toc: Mundarija
+
+copyright:
+  license:
+    template: Mualliflik huquqi :LICENSE_NAME litsenziyasi bilan himoyalangan.
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+
+  brief: Ba'zi huquqlar himoyalangan.
+  verbose: >-
+    Agar boshqacha ko‘rsatilmagan bo‘lsa, ushbu saytning mualliflik postlari Creative Commons Attribution 4.0 International (CC BY 4.0) litsenziyasi bilan himoyalangan.
+
+meta: :THEME mavzusidan foydalanadi :PLATFORM platformasi uchun
+
+not_found:
+  statement: ⚠️ Kechirasiz, URL noto‘g‘ri yoki mavjud bo‘lmagan sahifaga olib boradi.
+
+notification:
+  update_found: Yangi kontent versiyasi mavjud.
+  update: Yangilash
+
+post:
+  written_by: Muallif
+  posted: E’lon qilingan
+  updated: Yangilangan
+  words: so‘z
+  pageview_measure: ko‘rilishlar
+  read_time:
+    unit: daq.
+    prompt: o‘qish
+  relate_posts: O‘xshash postlar
+  share: Ulashish
+  button:
+    next: Keyingi post
+    previous: Oldingi post
+    copy_code:
+      succeed: Nusxa olindi!
+    share_link:
+      title: Havoladan nusxa olish
+      succeed: Havola muvaffaqiyatli nusxalandi!
+
+df:
+  post:
+    strftime: "%d.%m.%Y"
+    dayjs: "DD.MM.YYYY"
+
+categories:
+  category_measure:
+    singular: kategoriya
+    plural: kategoriyalar
+  post_measure:
+    singular: post
+    plural: postlar

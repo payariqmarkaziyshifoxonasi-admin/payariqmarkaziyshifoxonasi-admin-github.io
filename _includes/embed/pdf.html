@@ -1,0 +1,23 @@
+{% if include.url contains "http" %}
+<!-- Agar URL tashqi bo‘lsa, Google Docs orqali ochiladi -->
+<iframe
+  class="embed-pdf"
+  loading="lazy"
+  src="https://docs.google.com/gview?url={{ include.url }}&embedded=true"
+  scrolling="no"
+  frameborder="0"
+  width="100%"
+  height="600px"
+></iframe>
+{% else %}
+<!-- Agar URL ichki bo‘lsa, nisbiy yo‘lni ishlatadi -->
+<iframe
+  class="embed-pdf"
+  loading="lazy"
+  src="{{ site.baseurl }}{{ include.url }}"
+  scrolling="no"
+  frameborder="0"
+  width="100%"
+  height="600px"
+></iframe>
+{% endif %}

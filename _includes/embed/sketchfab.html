@@ -1,0 +1,21 @@
+{% assign model_id = include.id %} {% assign model_title = include.title |
+default: "3D model" %} {% assign model_style = include.style | default: "height:
+480px; width: 100%; background: none" %}
+
+<div class="sketchfab-embed-wrapper">
+  <iframe
+    title="{{ model_title | escape }}"
+    frameborder="0"
+    allowfullscreen
+    mozallowfullscreen="true"
+    webkitallowfullscreen="true"
+    allow="autoplay; fullscreen; xr-spatial-tracking"
+    xr-spatial-tracking
+    execution-while-out-of-viewport
+    execution-while-not-rendered
+    web-share
+    style="{{ model_style | escape }}"
+    src="https://sketchfab.com/models/{{ model_id }}/embed?autostart=1&transparent=1&ui_theme=dark"
+  >
+  </iframe>
+</div>
